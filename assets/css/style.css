@@ -1,0 +1,147 @@
+* {
+  font-family: arial, sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar {
+    padding-top: 5px;
+}
+.navbar li {
+  padding-right: 15px;
+  list-style: none;
+  font-size: 13px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+.account_pic {
+  border-radius: 2em;
+}
+
+.apps {
+  height: 24px;
+  width: 24px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+
+/* search bar */
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container-logo{
+    
+}
+
+.logo{
+    margin-top: 186px;
+}
+
+.search{
+    display: flex;
+    border-radius: 2em;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+    width: 582px;
+    
+    
+}
+.searchbar{
+    border: none;
+    width: 487px;
+    font-size: 16px;
+    padding-top: 10px;
+    
+}
+.search:hover{
+    box-shadow: 0px 0px 5px 1px lightgrey;
+}
+input.searchbar:focus {
+    outline-width: 0;
+}
+
+#search-image-glass{
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+#search-image-keyboard{
+    padding-top: 10px;
+}
+
+/* buttons*/
+
+.buttons{
+    display: flex;
+    padding:30px 30px 30px 30px;
+    font-size: 30px;
+
+}
+
+.buttons button{
+    padding:10px 10px 10px 10px;
+    border: transparent;
+    font-size: 14px;
+    background-color: rgb(248, 249, 250);
+
+}
+
+button:hover{
+    border: 1px solid lightgrey;
+    border-radius: 0.5em;
+
+}
+
+/* responsividade*/
+
+@media (max-width:620px) {
+    .search{
+        width: 382px
+    }
+    .searchbar{
+        width: 297px ;
+    }
+    .logo{
+       width: 170px;
+    }
+}
+
+@media (max-width:430px) {
+    .search{
+        width: 200px
+    }
+    .searchbar{
+        width: 110px ;
+    }
+    .logo{
+       width: 90px;
+    }
+
+    button{
+     
+    }
+    .buttons button{
+        font-size: 10px;
+        
+    }
+}
